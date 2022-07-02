@@ -2,7 +2,8 @@
 /**
 *main - writes 00 - 99
 *Decription: Writes all unique combinations
-*Return: zero for success*/
+*Return: zero for success
+*/
 int main(void)
 {
 int i, j;
