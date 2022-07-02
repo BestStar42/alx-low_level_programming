@@ -8,15 +8,15 @@
 */
 int main(void)
 {
-char letter = a;
+char letter = 'a';
 
-while (letter <= z)
+while (letter <= 'z')
 {
-if (letter == e)
+if (letter == 'e')
 {
 letter++;
 }
-else if (letter == q)
+else if (letter == 'q')
 {
 letter++;
 }
@@ -26,6 +26,6 @@ putchar(letter);
 letter++;
 }
 }
-putchar(n);
+putchar('\n');
 return (0);
 }
