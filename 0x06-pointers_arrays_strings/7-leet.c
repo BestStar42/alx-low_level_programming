@@ -1,32 +1,33 @@
 #include "main.h"
 
 /**
- * leet - a leet function
- * @x: parameter x
- * Return: a string
+ * leet - Encodes a string
+ * @s: String considered
+ *
+ * Return: Encodede string
  */
-char *leet(char *x)
+char *leet(char *s)
 {
 	int a = 0, b = 0, l = 5;
 	char r[5] = {'A', 'E', 'O', 'T', 'L'};
 	char n[5] = {'4', '3', '0', '7', '1'};
 
-	while (x[a])
+	while (s[a])
 	{
 		b = 0;
 
 		while (b < l)
 		{
-			if (x[a] == r[b] || x[a] - 32 == r[b])
+			if (s[a] == r[b] || s[a] - 32 == r[b])
 			{
-				x[a] = n[b];
+				s[a] = n[b];
 			}
 
 			b++;
 		}
 
-		a++
+		a++;
 	}
 
-	return (x);
+	return (s);
 }
