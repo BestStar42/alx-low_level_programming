@@ -1,26 +1,28 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * cap_string -> capitalization functiom
- * @x: string parameter
- * Return: capitalized vertion of the spring
+ * cap_string - ....
+ * @x: ...
+ *
+ * Return: character value
  */
 char *cap_string(char *x)
 {
-	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '(', ')', '{', '}'};
-		int len = 13;
-		int a = 0, 1;
+	int a = 0, i;
+	int spa = 13;
+	char spc[] = {32, 9, '\n', ',', ';', '.', '!', '?', '"', '(', ')', '{', '}'};
 
-		while (x[a])
+	while (x[a])
+	{
+		i = 0;
+		while (i < spa)
 		{
-			i = 0;
-			while (i < len)
-			{
-				if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
-					x[a] = x[a] - 32;
-				i++;
-			}
-			a++;
+			if ((a == 0 || x[a - 1] == spc[i]) && (x[a] >= 97 && x[a] <= 122))
+				x[a] = x[a] - 32;
+			i++;
 		}
-		return (x);
+		a++;
+	}
+	return (x);
 }
