@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
  * _strstr - locate a substring
  * @haystack: the string to search
@@ -31,5 +31,5 @@ char *_strstr(char *haystack, char *needle)
 		a++;
 	}
 
-	return ('\0')
+	return ('\0');
 }
