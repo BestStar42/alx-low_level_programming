@@ -1,6 +1,11 @@
 #include "main.h"
 
 /**
+ * _strstr - locate a substring
+ * @haystack: the string to search
+ * @needle: the string to find
+ *
+ * Return: char value
  */
 char *_strstr(char *haystack, char *needle)
 {
@@ -26,5 +31,5 @@ char *_strstr(char *haystack, char *needle)
 		a++;
 	}
 
-	return ('\0');
+	return ('\0')
 }
