@@ -15,7 +15,7 @@ int word_len(char *str)
 {
 int index = 0, len = 0;
 
-while (*(str + index) && *(str + index) !=  )
+while (*(str + index) && *(str + index) != ' ')
 {
 len++;
 index++;
@@ -39,7 +39,7 @@ len++;
 
 for (index = 0; index < len; index++)
 {
-if (*(str + index) !=  )
+if (*(str + index) != ' ')
 {
 words++;
 index += word_len(str + index);
@@ -74,7 +74,7 @@ return (NULL);
 
 for (w = 0; w < words; w++)
 {
-while (str[index] ==  )
+while (str[index] == ' ')
 index++;
 
 letters = word_len(str + index);
@@ -93,7 +93,7 @@ return (NULL);
 for (l = 0; l < letters; l++)
 strings[w][l] = str[index++];
 
-strings[w][l] = 0;
+strings[w][l] = '\0';
 }
 strings[w] = NULL;
 
