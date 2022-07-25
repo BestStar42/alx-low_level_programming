@@ -21,7 +21,7 @@ while (s2[j])
 j++;
 
 l = i + j;
-s = (char *)malloc(l * sizeof(char) + 1);
+s = (char *)malloc(l *sizeof(char) + 1);
 if (s == NULL)
 return (NULL);
 j = 0;
@@ -36,6 +36,6 @@ j++;
 }
 k++;
 }
-s[k] = 0;
+s[k] = '\0';
 return (s);
 }
